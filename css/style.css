@@ -1,0 +1,140 @@
+html {
+	font-size: 150%;
+}
+@media all and (max-width: 600px) {
+	html {
+		font-size: 120%;
+	}
+}
+body {
+	font-family: 'Lato', serif;
+	padding:0;
+	margin: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: none;
+}
+.btn {
+	display: inline-block;
+	line-height: 1;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	font-size: .8rem;
+	white-space: nowrap;
+	background-color: #ff4842;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+	margin-left: 1px;
+	padding: 1em;
+	border-radius: 1px;
+}
+    .btn:hover {
+    	text-decoration: none;
+    }
+    .btn:active,
+    .btn:focus {
+		outline: none;
+    }
+.main-header {
+	text-align: center;
+	background-color: #16210b;
+	color:white;
+	padding:4em;
+}
+	.main-header h1 {
+		margin: 0;
+	}
+	.main-header h2 {
+		font-size: 1rem;
+		font-weight: normal;
+	}
+
+	/* @media all and (min-width: 600px) {
+		.main-header {
+			background-color: blue;
+		}
+		
+	} */
+.search {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0;
+	font-size: 3rem;
+}
+	.search__text {
+		width: 75%;
+		font-size: 1rem;
+	}
+.loader {
+	text-align: center;
+	font-size: 3rem;
+}
+.card {
+	position: relative;
+	height: 30vh;
+	width: 100%;
+	background-image:url(https://mlpforums.com/uploads/monthly_07_2013/post-17813-0-86134000-1374169642.jpg);
+	background-size: cover;
+	color: white;
+	padding: .4em;
+	font-family: 'Lato', cursive;
+}
+	.card--valencia {
+		background-image:url(https://mlpforums.com/uploads/monthly_07_2013/post-17813-0-86134000-1374169642.jpg);
+	}
+	.card[data-city="mv"] {
+		background-image:url(https://wadesthoughts.files.wordpress.com/2014/01/thor-dark-world-scene-1.jpg);
+	}
+	.card__title {
+		margin: 0;
+		text-align: center;
+		font-size: 2.4rem;
+	}
+	.card__date {
+		margin:0;
+		font-size: 1.2rem;
+		text-align: center;
+	}
+        @media all and (min-width: 42em) {
+	.card {
+		background-image: url(https://wadesthoughts.files.wordpress.com/2014/01/thor-dark-world-scene-1.jpg);
+	}
+	.card[data-city="mv"] {
+		background-image: url(https://mlpforums.com/uploads/monthly_07_2013/post-17813-0-86134000-1374169642.jpg);
+	}
+}
+	.card__info {
+		position: absolute;
+		bottom:.4em;
+		left:.4em;
+		text-align: center;
+	}
+	.card__image {
+		display: block;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.card__temp {
+		display: block;
+		font-size: 3rem;
+		line-height: 1;
+	}
+	.card__temp::after {
+		content: "ºC";
+	}
+	.card__maxt::before {
+		content: "MAX: "
+	}
+	.card__mint::before {
+		content: "MIN: "
+	}
